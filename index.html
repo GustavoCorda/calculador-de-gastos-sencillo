@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular Gastos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculador de gastos</h1>
+
+    <p class="recordatorio">Ingresar datos y presionar Enter</p>
+
+    <div class="marco">
+      <div class="contenedor">
+        <div>
+          <div>
+            <label for="gasto">Cuanto gaste $</label>
+          </div>
+          <input type="number" name="" id="gasto" />
+        </div>
+
+        <div>
+          <div>
+            <label  for="compra">Cuanto compre (kg , gr , unidades)</label>
+          </div>
+          <input type="number" name="" id="compra" />
+        </div>
+
+        <div>
+          <div class="input-usado">
+            <label for="usado">Cuanto use (Kg , gr , unidades)</label>
+          </div>
+          <input type="number" name="" id="usado" />
+        </div>
+      </div>
+
+      <div class="boton">
+        <button onclick="resultado()">Calcular</button>
+      </div>
+
+      <label for="resultado">Cuanto gaste en lo que use </label>
+      <div class="resultado">
+        <div id="resultado">
+          <p class="contenido-resultado" id="contenido-resultado"></p>
+        </div>
+      </div>
+    </div>
+
+    <img class="stitch" src="stitch.jpg" alt="">
+    <img src="stitch-2.png" alt="" class="stitch-2">
+
+    <script src="main.js"></script>
+  </body>
+</html>

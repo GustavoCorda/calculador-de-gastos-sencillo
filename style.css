@@ -1,0 +1,143 @@
+* body {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family: 'Alkatra', cursive;
+}
+
+.recordatorio {
+    color: rgb(58, 62, 65);
+    font-size: large;
+}
+
+.marco {
+  width: 65%;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 8px;
+  background: url(./stitch.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contenedor {
+  width: 55%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+/* .input-usado {
+    padding-bottom: 10px;
+} */
+
+.boton {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: rgb(147, 113, 179);
+  color: black;
+  font-weight: 600;
+}
+.resultado {
+  margin-top: 5px;
+  border: 2px black solid;
+  border-radius: 4px;
+  width: 25%;
+  height: 120px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(224, 76, 106);
+  overflow: hidden;
+}
+
+.contenido-resultado {
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color: darkblue;
+  background-color: rgb(224, 76, 106);
+}
+
+#usado,
+#compra,
+#gasto {
+  border: solid 1px black;
+  border-radius: 2px;
+  width: 5em;
+  font-weight: 900;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+label {
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 600;
+  font-style: oblique;
+  color: rgb(89, 52, 107);
+}
+
+input [type="number"] {
+  border: solid 1px rgb(50, 49, 49);
+  border-radius: 2px;
+  box-shadow: 0 0 0 1.5 rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.stitch {
+  display: none ;
+  position: absolute;
+  bottom: 80px;
+  left: 280px;
+  width: 380px;
+}
+
+.stitch-2 {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  left: 280px;
+  width: 380px;
+}
+
+@media (max-width: 1099px) {
+  .marco {
+    background:none;    
+  }
+
+  .stitch {
+    display: block;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+  .stitch {
+    width: 200px;
+    bottom: 230px;
+  }
+
+  .stitch-2 {
+    display: block;
+    width: 200px;
+    bottom: 20px;
+  }
+
+  
+  
+}
